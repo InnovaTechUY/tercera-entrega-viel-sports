@@ -1,0 +1,236 @@
+html {
+    box-sizing: border-box !important;
+    /*Box Model*/
+
+}
+
+:root {
+    --verdeOscuro: #2f9300;
+    --verdeClaro: #329f00;
+    --rojo: #cb0000;
+    --rojoOscuro: #c00000;
+    --negroClaro: #3b3b3b;
+    --negroOscuro: #1F1E1E;
+    --azulClaro: #3B8BC4;
+    --azulMediano: #004578;
+    --azulOscuro: #002845;
+    --blanco : #f2f2f2;
+}
+
+*,
+*:before,
+*:after {
+    /*para que al aplicarle el padding no afecte al tamaño de la imagen original*/
+    box-sizing: inherit !important;
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Akaya Telivigala', cursive;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f2f2f2!important; /*mas ocuro #e8e8e8*/
+}
+
+/*Globales*/
+h1 {
+    font-size: 3.8rem;
+    padding: 5rem;
+    margin: auto;
+}
+
+h2 {
+    font-size: 2.8rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+img {
+    max-width: 100%;
+}
+
+svg { /*Hacer una clase para los svg de suscripciones y otro para el svg de LOGOUT*/
+    width: 60px;
+    height: 60px;
+}
+
+legend {
+    text-align: center;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+span {
+    color: var(--verdeOscuro);
+}
+
+cite {
+    color: white;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+li {
+    list-style:none;
+}
+
+input:hover,
+input:focus,
+input:active:focus,
+textarea{
+    outline: none;
+}
+
+
+textarea {
+    width: 100%;
+    resize: none!important;
+    padding: .5rem;
+}
+
+p {
+    margin-bottom: 0 !important;
+}
+
+select {
+    background-color: #fbfbfb;
+    border: none;
+}
+option {
+    background-color: white;
+}
+option:hover {
+    background-color:#ffffff;
+}
+
+
+/*Globales de los formularios*/
+.label{
+    width: 100%;
+    margin: .5rem auto;
+}
+
+.input {
+    width: 100%;
+    padding: .7rem;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.button {
+    display: block;
+    text-align: center;
+    justify-content: space-around;
+    border: none;
+    margin: 20px auto;
+    border-radius: 5px;
+    width: 90%;
+    padding: .5rem;
+    transition: background-color .3s ease;
+    color: var(--blanco);
+}
+
+.button:hover{
+    color: var(--blanco);
+}
+
+.button-enviar{
+    background-color: #329f00;
+    color: var(--blanco);
+}
+
+.button-enviar:hover {
+    background-color: #2f9300;
+}
+
+.button-borrar{
+    background-color: #cb0000;
+    color: var(--blanco);
+}
+
+.button-borrar:hover {
+    background-color: #c00000;
+}
+/*clase para otros botones dentro del sitio*/
+.button-auxiliar {
+    background-color: #3B8BC4;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 30%;
+    color: var(--blanco);
+}
+
+.button-auxiliar:hover {
+    background-color: #002845;
+}
+
+@media (min-width: 1000px) {
+    .buttons-contenedor {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap:2rem;
+    }
+}
+
+/*  Utilidades */
+
+.transicion-tamaño {
+    transition-property: transform;
+    transition-duration: .3s;
+    /* es lo mismo que: transition: transform .3s*/
+}
+
+.transicion-tamaño:hover {
+    transform: scale(1.1); /*1 = 100% tamaño original, .1 = 10%, 1.1 = 110%*/
+}
+
+.box-shadow {
+    /*box-shadow: 0px 0px 15px 3px rgb(0 0 0 / .15);*/
+    padding: 2rem;
+    background-color: white;
+}
+
+.mn-bottom{
+    margin-bottom: 1rem;
+}
+
+.equipos-evento {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
+}
+
+.equipos-evento-contenido {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.equipos-evento-contenido h5 {
+    margin-bottom: .5rem;
+}
+
+.equipos-evento-individual {
+
+}
+
+.equipos-evento-individual h5 {
+    display: block;
+}
+
+.equipos-evento-individual-contenido {
+    display: grid;
+    grid-template-columns: 80% 20%;
+    column-gap: 2rem;
+}
+
+.equipos-evento-individual-contenido button {
+    width: 200px;
+}
+
+.gris-disabled {
+    background-color: #e9ecef;
+} 

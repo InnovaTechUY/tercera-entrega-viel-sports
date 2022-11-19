@@ -1,0 +1,45 @@
+.terminos__condiciones {
+    background-color: var(--azulClaro);
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+    align-items: center;
+}
+
+@media (min-width: 1000px) {
+    .terminos__condiciones {
+        flex-direction: row;
+        text-align: center;
+        margin: -1px auto;
+    }
+}
+
+.nosotros__heading {
+    color: var(--blanco);
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+.nosotros__heading {
+    display: block;
+    margin: 1rem auto;
+}
+
+.nosotros__parrafo {
+    text-align: left;
+    width: 100%;
+    color: var(--blanco);
+    line-height: 2;
+}
+
+@media (min-width: 1000px) {
+    .nosotros__parrafo {
+        width: 70%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .nosotros__parrafo {
+        width: 65%;
+    }
+}

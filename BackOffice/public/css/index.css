@@ -1,0 +1,308 @@
+/*  Header */
+
+.header {
+    background-color: var(--azulMediano)!important; /*Mas Claro #014c85*/
+    padding: 2rem!important;
+}
+
+.navbar-toggler {
+    background-color: var(--azulMediano)!important; /*Mas Claro #014c85*/
+}/*50ac00*/
+
+@media (max-width: 600px) {
+    .navbar-toggler {
+        margin: 0 auto;
+    }
+}
+
+.navbar-toggler {
+    -webkit-box-shadow: none!important;
+    -moz-box-shadow: none!important;
+    -o-box-shadow: none!important;
+    box-shadow: none!important;
+    border: none !important;
+    font-size: 25px!important;
+}
+
+.navbar-toggler-icon {
+    color: white!important;
+    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='rgba(255, 255, 255, 255.255)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>") !important;
+}
+
+.btn-close {
+    -webkit-box-shadow: none!important;
+    -moz-box-shadow: none!important;
+    -o-box-shadow: none!important;
+    box-shadow: none!important;
+    border: none !important;
+}
+
+.btn {
+   border: var(--bs-btn-border-width) solid var(--negroOscuro);
+}
+
+.btn-outline-success {
+    --bs-btn-color: var(--negroOscuro)!important;
+    --bs-btn-border-color: var(--negroOscuro)!important;
+    --bs-btn-hover-color: var(--blanco)!important;
+    --bs-btn-hover-bg: var(--negroOscuro)!important;
+    --bs-btn-hover-border-color: var(--negroOscuro)!important;
+    --bs-btn-focus-shadow-rgb: 25,135,84;
+    --bs-btn-active-color: var(--blanco)!important;
+    --bs-btn-active-bg: var(--negroOscuro)!important;
+    --bs-btn-active-border-color: var(--negroOscuro)!important;
+}
+
+.btn:hover {
+    color: var(--blanco)!important;
+    background-color: var(--negroOscuro)!important;
+    border-color: var(--negroOscuro)!important;
+}
+
+.btn,.form-control {
+
+    -webkit-box-shadow: none!important;
+    -moz-box-shadow: none!important;
+    -o-box-shadow: none!important;
+    box-shadow: none!important;
+}
+
+.navbar>.container, .navbar>.container-fluid, .navbar>.container-lg, .navbar>.container-md, .navbar>.container-sm, .navbar>.container-xl, .navbar>.container-xxl {
+    flex-wrap: nowrap !important;
+}
+
+.logo {
+    width: 30%;
+}
+
+@media (min-width: 768px) {
+    .logo {
+        width: 20%;
+    }
+}
+
+@media (min-width: 1000px) {
+    .logo {
+        width: 15%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .logo {
+        width: 10%;
+    }
+}
+
+.logout {
+    border: none;
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+    font-weight: 500;
+    margin: 100% auto 0 0;
+    text-align: center;
+    position: absolute;
+}
+
+.portada {
+    background-image: url("../img/Banner.png");
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    filter: brightness(75%);
+}
+/*
+.portada::before {
+    background-color: #000;
+    bottom: 0;
+    content: "";
+    left: 0;
+    opacity: .6;
+    position: absolute;
+    right: 0;
+    top: 10%;
+  }
+*/
+.contenedor {
+    margin-top: 5%;
+}
+
+.portada {
+    min-height: 600px;
+
+}
+
+.portada a,.boton {
+    filter: brightness(100%);
+    padding: 15px 40px;
+    margin-top: 15%;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    color: white;
+    position: relative; /*sin esta linea los colores del boton serian afectados por el .portada::before*/
+    border-radius: 2px;
+    background-color: var(--verdeClaro);
+    text-align: center;
+    transition-property: background-color;
+    transition-duration: .3s;
+    
+}
+
+.portada a:hover {
+    color: white;
+}
+
+/* Contenedor Resultados y Publicidad*/
+.contenedor__resultados__publicidad {
+    display: block;
+}
+
+@media (min-width: 1000px) {
+    .contenedor__resultados__publicidad {
+        display: grid;
+        grid-template-columns: 1fr 5fr 1fr;
+    }   
+}
+
+.contenedor__resultados {
+    display: block;
+    padding: 3rem;
+    gap: 2rem;
+}
+
+@media (min-width: 1200px) {
+    .contenedor__resultados {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+.contenido__resultados {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+
+.resultados__info {
+    display:block;
+    padding: 2rem;
+    text-align: center;
+}
+
+.resultados__info p {
+    text-align: start;
+}
+
+.resultados__lista {
+    margin:0 auto;
+    padding:0;
+}
+
+.resultados__publicidad {
+    height: 800px;
+    background-color: gray;
+}
+
+
+@media (max-width: 1000px) {
+    .resultados__publicidad {
+        height: 250px;
+        background-color: gray;
+    }
+}
+
+/* Slider */
+
+.contenedor_slider{
+    background-color: black;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.slider-3D{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    transform-style: preserve-3d;
+    animation: rotate  25s linear infinite;
+    margin: 100px auto;
+}
+
+@keyframes rotate {
+    0%{
+        transform: perspective(1000px) rotateY(0deg);
+    }
+    100%{
+        transform: perspective(1000px) rotateY(360deg);
+    }
+}
+
+.slider-3D span{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform-origin: center; 
+  transform-style: preserve-3d; 
+  transform: rotateY(calc(var(--i)*45deg)) translateZ(350px);
+}
+
+.slider-3D span img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 100px;
+    object-fit: cover;
+    transition: 2s;
+}
+
+.slider-3D span:hover img{
+    transform: translateY(-50px) scale(1.2);
+}
+
+
+/*Footer*/
+.footer {
+    padding: 2rem;
+    background-color: var(--azulMediano);
+    text-align: center;
+}
+
+.footer cite {
+    color: var(--blanco);
+}
+
+.footer__nav a {
+    font-weight: bold;
+    font-size: .9rem;
+    color: var(--blanco);
+    display: none;
+    text-align: center;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    
+}
+
+.footer__nav a:hover {
+    color: #cccccc;
+}
+
+@media (min-width: 768px) {
+    .footer__nav {
+        display: flex;
+        margin-left: 5%;
+    }
+    .footer__nav a {
+        display: block;
+    }
+}

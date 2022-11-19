@@ -1,0 +1,37 @@
+
+
+.formulario-contacto {
+    margin: 5rem auto;
+    box-shadow: 0px 0px 15px 3px rgb(0 0 0 / .15);
+    width: 90%;
+    padding: 2rem;
+    background-color: white;
+}
+
+.formulario-contacto h2 {
+    text-align: center;
+    border-bottom: 1px solid gray;
+    padding: 3%;
+    margin-top: 0;
+}
+
+.contenedor-formulario-contacto {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    
+}  
+
+@media (min-width: 1000px) {
+    .contenedor-formulario-contacto {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 1rem;
+    }    
+}
+
+.div-button-contacto input{
+    width: 100%;
+    padding: .5rem;
+}
+

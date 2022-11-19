@@ -1,0 +1,29 @@
+
+.formulario-registro {
+    display: block;
+    border-radius: 5px;
+    background-color: white;
+    margin: 5rem auto;
+    width: 80%;
+    padding: 2rem;
+}
+
+.formulario-registro h2 {
+    text-align: center;
+    border-bottom: 1px solid gray;
+    padding: 3%;
+    margin-top: 0;
+}
+
+.formulario-registr__contenido {
+    display: block;
+}
+
+.contenedor-button-registro {
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.contenedor-button-regitro input {
+    width: 80%;
+}

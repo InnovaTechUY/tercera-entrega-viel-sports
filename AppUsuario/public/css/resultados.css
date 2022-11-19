@@ -1,0 +1,154 @@
+
+.resultados-deportivos {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 768px) {
+    .resultados-deportivos {
+        display: grid;
+        grid-template-columns: 20% 80%;
+      
+    }
+}
+
+.seccion-resultados {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    background-color: white;
+    
+}
+
+.boton-deportes {
+    border: none;
+    padding: .7rem 3rem;
+    margin: 0 auto;
+    margin-top: 50px;
+    display: none;
+}
+
+
+@media (max-width: 768px ) {
+    .boton-deportes {
+        display: block;
+    }
+    .seccion-resultados {
+        display: none;
+    }
+
+}
+
+.resultados__enlace {
+    color: rgb(79, 79, 79);
+    margin-top: 1rem;
+    margin-left: 1.5rem;
+    padding: .5rem;
+    cursor: pointer;
+}
+
+.resultados__enlace:first-of-type {
+    margin-top: 2rem;
+}
+
+.resultados__enlace:hover {
+    color: #d8d8d8;
+}
+
+.contenedor-resultados,.contenedor-resultados-individuales {
+    display: block;
+    width: auto; 
+    margin: 1rem auto;
+    background-color: var(--azulClaro);
+}
+
+@media (min-width: 1200px) {
+    .contenedor-equipo {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+.contenedor {
+    display: block;
+    text-align: center;
+}
+
+.contenedor:last-of-type {
+    margin-top: 2rem;
+}
+
+.contenedor h2 {
+    margin: 2rem;
+}
+
+.resultado {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: white;
+}
+
+.equipo:nth-child(2n) .puntaje { 
+    order: -2;
+}
+
+
+.equipo {
+    display: flex;
+    flex-direction: row;
+    column-gap: 2rem;
+
+}
+
+@media (min-width: 768px) {
+
+    .equipo {
+        margin: .2rem auto;
+    }
+
+}
+
+
+.contenedor__resultados {
+    display: block;
+    padding: 3rem;
+    gap: 2rem;
+}
+
+@media (min-width: 1200px) {
+    .contenedor__resultados {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+.contenido__resultados {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    background-color: var(--azulClaro) !important; 
+    color: #f2f2f2;
+}
+
+.resultados__info {
+    display:block;
+    padding: 2rem;
+    text-align: center;
+}
+
+.resultados__info p {
+    text-align: start;
+}
+
+.resultados__lista {
+    margin:0 auto;
+    padding:0;
+}
+
+.resultados__datos{
+    display: flex;
+    flex-direction: row;
+    column-gap: .3rem;
+}

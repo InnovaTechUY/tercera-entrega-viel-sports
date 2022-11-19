@@ -1,0 +1,32 @@
+
+.formulario-suscripcion {
+    display: block;
+    border-radius: 5px;
+    background-color: white;
+    margin: 5rem auto;
+    width: 90%;
+    padding: 2rem;
+}
+
+.formulario-suscripcion h2 {
+    text-align: center;
+    border-bottom: 1px solid gray;
+    padding: 2rem;
+}
+
+.formulario-suscripcion__contenido {
+    display: block;
+}
+
+@media (min-width: 768px) {
+    .formulario-suscripcion__contenido {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 1rem;
+    }   
+}
+
+.pais {
+    width: 100%;
+    border: none;
+}

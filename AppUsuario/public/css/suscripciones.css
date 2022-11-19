@@ -1,0 +1,86 @@
+
+.contenedor__iconos {
+    display: block;
+    width: 100%;
+    margin: 100px auto;
+    padding: 5rem;
+    background-color: white;
+}
+
+@media (min-width: 468px) {
+    .contenedor__iconos {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        width: 90%;
+    }
+}
+
+@media (min-width: 768px) {
+    .contenedor__iconos {
+        grid-template-columns: repeat(4, 1fr);     
+        width: 80%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .contenedor__iconos {
+        grid-template-columns: repeat(4, 1fr);  
+        width: 70%;
+    }
+}
+
+.contenido__iconos {
+    display: block;
+    text-align: center;     
+}
+
+/* Suscripciones */
+
+.contenedor__suscripciones {
+    display: block;
+    margin: 100px auto;
+}
+
+@media (min-width: 768px) {
+    .contenedor__suscripciones {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+}
+
+.suscripciones__duracion {
+    background-color: rgb(80, 80, 80);
+    color: white;
+    width: 80px;
+    padding: 4px;
+    text-align: center;
+}
+
+.contenido__suscripciones {
+    margin: 20px auto;
+    height: 500px;
+    max-width: 500px;
+    padding: 2rem;
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: 0px 0px 15px 3px rgb(0 0 0 / .15);
+}
+
+.suscripcion {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.suscripciones__tipo {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.suscripciones__precio {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
